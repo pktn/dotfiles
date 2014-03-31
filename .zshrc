@@ -4,13 +4,6 @@ export LANG=ja_JP.UTF-8
 # パスの設定
 PATH=/usr/local/bin:$PATH
 export MANPATH=/usr/local/share/man:/usr/local/man:/usr/share/man
-PATH=$PATH:/var/www/html/cake/console:
-PATH=/usr/local/python/bin:$PATH
-PATH=$HOME/.nodebrew/current/bin:$PATH
-HOME=/root
-WEB_ROOT=/var/www/html/cms/webroot
-CMS_ROOT=/var/www/html/cms
-NODE_ENV=development
 export SVN_EDITOR=vim
 
 # 関数
@@ -22,7 +15,6 @@ alias ll='ls -ltr'
 alias gd='dirs -v; echo -n "select number: "; read newdir; cd +"$newdir"'
 alias vi='vim'
 alias grep='grep --color=auto'
-alias myack='ack --ignore-dir=node_modules'
 
 # プロンプトの設定 
 # PROMPT='%~# '
@@ -120,3 +112,4 @@ setopt auto_cd
 # C-s, C-qを無効にする。
 setopt no_flow_control
 
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
